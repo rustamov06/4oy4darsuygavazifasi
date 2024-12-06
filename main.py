@@ -82,14 +82,31 @@
 
 # 2 vazifa
 
-from datetime import datetime
-tugilgan_yil = int(input("Tug'ilgan yilingizni kiriting (YYYY formatda): "))
-tugilgan_oy = int(input("Tug'ilgan oyingizni kiriting (1-12 orasida): "))
-tugilgan_kun = int(input("Tug'ilgan kuningizni kiriting: "))
-bugungi_sana = datetime.now()
-tugilgan_sana = datetime(tugilgan_yil, tugilgan_oy, tugilgan_kun)
-yosh = bugungi_sana.year - tugilgan_sana.year
-if (bugungi_sana.month, bugungi_sana.day) == (tugilgan_sana.month, tugilgan_sana.day):
-    print("Tug'ilgan kuningiz bilan!")
-else:
-    print(f"Sizning yoshingiz: {yosh} yosh.")
+# from datetime import datetime
+# tugilgan_yil = int(input("Tug'ilgan yilingizni kiriting (YYYY formatda): "))
+# tugilgan_oy = int(input("Tug'ilgan oyingizni kiriting (1-12 orasida): "))
+# tugilgan_kun = int(input("Tug'ilgan kuningizni kiriting: "))
+# bugungi_sana = datetime.now()
+# tugilgan_sana = datetime(tugilgan_yil, tugilgan_oy, tugilgan_kun)
+# yosh = bugungi_sana.year - tugilgan_sana.year
+# if (bugungi_sana.month, bugungi_sana.day) == (tugilgan_sana.month, tugilgan_sana.day):
+#     print("Tug'ilgan kuningiz bilan!")
+# else:
+#     print(f"Sizning yoshingiz: {yosh} yosh.")
+
+# 3 vazifa
+#
+# from datetime import datetime
+# boshlanish_vaqti = input("Boshlanish vaqtini kiriting (hh:mm:ss formatda): ")
+# tugash_vaqti = input("Tugash vaqtini kiriting (hh:mm:ss formatda): ")
+# bugungi_sana = datetime.now()
+# boshlanish_vaqt = datetime.strptime(boshlanish_vaqti, '%H:%M:%S')
+# tugash_vaqt = datetime.strptime(tugash_vaqti, '%H:%M:%S')
+# boshlanish_vaqt = bugungi_sana.replace(hour=boshlanish_vaqt.hour, minute=boshlanish_vaqt.minute, second=boshlanish_vaqt.second)
+# tugash_vaqt = bugungi_sana.replace(hour=tugash_vaqt.hour, minute=tugash_vaqt.minute, second=tugash_vaqt.second)
+#
+# if tugash_vaqt < boshlanish_vaqt:
+#     tugash_vaqt = tugash_vaqt.replace(day=bugungi_sana.day + 1)
+# vaqt_oraligi = tugash_vaqt - boshlanish_vaqt
+# soniyalar = vaqt_oraligi.total_seconds()
+# print(f"Boshlanish va tugash vaqti orasidagi jami soniyalar: {int(soniyalar)} soniya.")
