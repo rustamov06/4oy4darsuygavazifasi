@@ -120,3 +120,18 @@
 # radius = diametr / 2
 # yuzasi = math.pi * (radius ** 2)
 # print(f"Aylana yuzasi: {yuzasi:.2f}")
+
+# 2 vazifa
+
+# import math
+#
+# try:
+#     son = float(input("Sonni kiriting: "))
+#     if son < 0:
+#         raise ValueError("Manfiy son uchun ildizlar mavjud emas!")
+#     kvadrat_ildiz = math.sqrt(son)
+#     kub_ildiz = son ** (1 / 3)
+#     print(f"Sonning kvadrat ildizi: {kvadrat_ildiz:.2f}")
+#     print(f"Sonning kub ildizi: {kub_ildiz:.2f}")
+# except ValueError as e:
+#     print(f"Hatolik: {e}")
