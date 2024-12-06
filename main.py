@@ -135,3 +135,17 @@
 #     print(f"Sonning kub ildizi: {kub_ildiz:.2f}")
 # except ValueError as e:
 #     print(f"Hatolik: {e}")
+
+
+# Random Moduli
+# 1 vazifa
+
+import random
+butun_sonlar = [random.randint(1, 100) for _ in range(5)]
+haqiqiy_sonlar = [random.uniform(0, 1) for _ in range(3)]
+hamma_sonlar = butun_sonlar + haqiqiy_sonlar
+ortacha_qiymat = sum(hamma_sonlar) / len(hamma_sonlar)
+print(f"Butun sonlar: {butun_sonlar}")
+print(f"Haqiqiy sonlar: {haqiqiy_sonlar}")
+print(f"Jami sonlar: {hamma_sonlar}")
+print(f"O'rtacha qiymat: {ortacha_qiymat:.4f}")
