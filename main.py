@@ -80,3 +80,16 @@
 # print("7 kun oldingi sana:", sana_7_kun_oldin.strftime('%Y-%m-%d'))
 # print("7 kun keyingi sana:", sana_7_kun_keyin.strftime('%Y-%m-%d'))
 
+# 2 vazifa
+
+from datetime import datetime
+tugilgan_yil = int(input("Tug'ilgan yilingizni kiriting (YYYY formatda): "))
+tugilgan_oy = int(input("Tug'ilgan oyingizni kiriting (1-12 orasida): "))
+tugilgan_kun = int(input("Tug'ilgan kuningizni kiriting: "))
+bugungi_sana = datetime.now()
+tugilgan_sana = datetime(tugilgan_yil, tugilgan_oy, tugilgan_kun)
+yosh = bugungi_sana.year - tugilgan_sana.year
+if (bugungi_sana.month, bugungi_sana.day) == (tugilgan_sana.month, tugilgan_sana.day):
+    print("Tug'ilgan kuningiz bilan!")
+else:
+    print(f"Sizning yoshingiz: {yosh} yosh.")
