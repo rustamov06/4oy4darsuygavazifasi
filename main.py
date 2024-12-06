@@ -110,3 +110,13 @@
 # vaqt_oraligi = tugash_vaqt - boshlanish_vaqt
 # soniyalar = vaqt_oraligi.total_seconds()
 # print(f"Boshlanish va tugash vaqti orasidagi jami soniyalar: {int(soniyalar)} soniya.")
+
+
+# Math Moduli
+# 1 vazifa
+
+# import math
+# diametr = float(input("Aylananing diametrini kiriting: "))
+# radius = diametr / 2
+# yuzasi = math.pi * (radius ** 2)
+# print(f"Aylana yuzasi: {yuzasi:.2f}")
